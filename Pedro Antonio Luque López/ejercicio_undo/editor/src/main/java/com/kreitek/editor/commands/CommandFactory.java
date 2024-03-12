@@ -22,7 +22,6 @@ public class CommandFactory {
     }
 
     private Command createUndoCommand() {
-        // TODO create undo command
         return new UndoCommand(editor);
     }
 
