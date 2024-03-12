@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CatController implements Controller {
 
-    private Logger logger = new Logger();
+    private Logger logger = Logger.getInstancia();
 
     @Override
     public String executePut(String petName, String ownerName, String telephone) {

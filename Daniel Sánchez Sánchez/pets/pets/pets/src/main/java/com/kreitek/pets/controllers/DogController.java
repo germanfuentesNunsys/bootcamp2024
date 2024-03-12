@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DogController implements Controller {
 
-    private Logger logger = new Logger();
+    private Logger logger = Logger.getInstancia();
 
     public String executePut(String petName, String ownerName, String telephone) {
         logger.debug("DogController.executePut " + petName + "," + ownerName + "," + telephone);

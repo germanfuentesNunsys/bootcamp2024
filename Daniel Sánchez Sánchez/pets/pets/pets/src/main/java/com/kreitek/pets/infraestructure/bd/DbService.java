@@ -10,7 +10,7 @@ import java.util.List;
 public class DbService {
     private static volatile DbService instance = null;
 
-    private Logger logger = new Logger();
+    private Logger logger = Logger.getInstancia();
 
     private List<Cat> cats = new ArrayList<>();
     private List<Dog> dogs = new ArrayList<>();

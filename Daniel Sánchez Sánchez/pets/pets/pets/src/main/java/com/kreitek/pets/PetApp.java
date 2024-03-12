@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class PetApp {
 
-    private Logger logger = new Logger();
+    private Logger logger = Logger.getInstancia();
 
     public static void main(String[] args) {
         PetApp petApp = new PetApp();
