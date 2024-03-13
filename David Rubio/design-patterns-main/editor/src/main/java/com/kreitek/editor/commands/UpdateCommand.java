@@ -1,7 +1,5 @@
 package com.kreitek.editor.commands;
 
-import com.kreitek.editor.Command;
-
 import java.util.ArrayList;
 
 public class UpdateCommand implements Command {
