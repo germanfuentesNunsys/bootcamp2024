@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b9692b8-c8cf-437e-ad23-184870f1fa1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/editor/src/main/java/com/kreitek/editor/commands/UndoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Daniel Sánchez Sánchez/pets/pets/RevisaComentarioClaseLog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../David Rubio/design-patterns-main/pets/REvisacomentariosclaseLogger" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/editor/src/main/java/com/kreitek/editor/commands/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/editor/src/main/java/com/kreitek/editor/commands/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/pets/src/main/java/com/kreitek/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/pets/src/main/java/com/kreitek/Logs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/pets/src/main/java/com/kreitek/pets/infraestructure/bd/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Adrian Tebar Galvez/design-patterns-main/pets/src/main/java/com/kreitek/pets/infraestructure/bd/DbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Daniel Sánchez Sánchez/pets/pets/pets/src/main/java/com/kreitek/pets/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Daniel Sánchez Sánchez/pets/pets/pets/src/main/java/com/kreitek/pets/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../David Rubio/design-patterns-main/pets/src/main/java/com/kreitek/pets/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../David Rubio/design-patterns-main/pets/src/main/java/com/kreitek/pets/logger/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ddfQylXo68k2SsuHQRUpGZaLT4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/workspace/bootcamp2024/Juan Andrés Izquierdo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b9692b8-c8cf-437e-ad23-184870f1fa1b" name="Changes" comment="" />
+      <created>1710342864245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710342864245</updated>
+    </task>
+    <servers />
+  </component>
+</project>
