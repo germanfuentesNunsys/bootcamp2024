@@ -1,6 +1,12 @@
 package com.kreitek.editor;
 
+import com.kreitek.editor.commands.Command;
 import com.kreitek.editor.commands.CommandFactory;
+import com.kreitek.editor.exceptions.BadCommandException;
+import com.kreitek.editor.exceptions.ExitException;
+import com.kreitek.editor.exceptions.NullEditMementoException;
+import com.kreitek.editor.memento.EditorCareTaker;
+import com.kreitek.editor.memento.EditorMemento;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,6 +24,9 @@ public class ConsoleEditor implements Editor {
 
     private final CommandFactory commandFactory = new CommandFactory();
     private ArrayList<String> documentLines = new ArrayList<String>();
+    private EditorCareTaker editorCareTaker = new EditorCareTaker();
+    private EditorMemento editorMemento;
+
 
     @Override
     public void run() {
@@ -25,12 +34,18 @@ public class ConsoleEditor implements Editor {
         while (!exit) {
             String commandLine = waitForNewCommand();
             try {
-                Command command = commandFactory.getCommand(commandLine);
+                Command command = commandFactory.getCommand(commandLine, editorCareTaker);
                 command.execute(documentLines);
+
+                editorMemento = new EditorMemento(documentLines);
+                editorCareTaker.save(editorMemento);
+
             } catch (BadCommandException e) {
                 printErrorToConsole("Bad command");
             } catch (ExitException e) {
                 exit = true;
+            } catch (NullEditMementoException e) {
+                printErrorToConsole("No more undo");
             }
             showDocumentLines(documentLines);
             showHelp();
