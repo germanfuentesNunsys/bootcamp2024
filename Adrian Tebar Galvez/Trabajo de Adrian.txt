@@ -1,0 +1,1 @@
+Ejercicio práctico de Patrones de Diseño - Implementar Logger
