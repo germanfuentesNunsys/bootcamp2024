@@ -1,7 +1,5 @@
 package com.kreitek.editor.commands;
 
-import com.kreitek.editor.Command;
-
 import java.util.ArrayList;
 
 public class DeleteCommand implements Command {
@@ -13,6 +11,8 @@ public class DeleteCommand implements Command {
 
     @Override
     public void execute(ArrayList<String> documentLines) {
+
         documentLines.remove(lineNumber);
+
     }
 }

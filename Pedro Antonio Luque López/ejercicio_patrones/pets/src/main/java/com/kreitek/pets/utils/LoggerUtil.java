@@ -7,7 +7,11 @@ public class LoggerUtil
 
     public static LoggerUtil getInstance(){
         if(instance == null){
-            instance = new LoggerUtil();
+            synchronized (LoggerUtil.class) {
+                if (instance == null) {
+                    instance = new LoggerUtil();
+                }
+            }
         }
         return instance;
     }
