@@ -5,7 +5,7 @@ import javax.management.RuntimeErrorException;
 public class Logs {
     
     private static volatile Logs instance = null;
-    private static int contadorr = 0;
+    private int contadorr = 0;
 
 
     private Logs(){
