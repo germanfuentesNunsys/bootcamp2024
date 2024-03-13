@@ -2,7 +2,7 @@ package com.kreitek.editor.memento;
 
 import java.util.ArrayList;
 
-public class EditorMemento {
+public class EditorMemento implements EditorMementoInterface{
     private ArrayList<String> state;
 
     public EditorMemento(ArrayList<String> state) {

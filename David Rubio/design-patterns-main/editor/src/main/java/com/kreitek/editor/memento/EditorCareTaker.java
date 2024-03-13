@@ -4,17 +4,17 @@ import com.kreitek.editor.exceptions.NullEditMementoException;
 
 import java.util.ArrayList;
 
-public class EditorCareTaker {
+public class EditorCareTaker implements EditorCareTakerInterface{
 
-    private ArrayList<EditorMemento> mementos = new ArrayList<>();
+    private ArrayList<EditorMementoInterface> mementos =  new ArrayList<>();
 
     public EditorCareTaker() {
         this.mementos.add(new EditorMemento(new ArrayList<>()));
     }
 
-
-    public EditorMemento undo() throws NullEditMementoException {
-        EditorMemento memento = null;
+    @Override
+    public EditorMementoInterface undo() throws NullEditMementoException {
+        EditorMementoInterface memento = null;
         if (mementos.size() > 1){
 
             mementos.remove(mementos.size() - 1);
@@ -28,8 +28,8 @@ public class EditorCareTaker {
         return memento;
 
     }
-
-    public void save(EditorMemento memento) {
+    @Override
+    public void save(EditorMementoInterface memento) {
         mementos.add(memento);
     }
 }

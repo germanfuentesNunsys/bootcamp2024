@@ -3,13 +3,14 @@ package com.kreitek.editor.commands;
 import com.kreitek.editor.exceptions.BadCommandException;
 import com.kreitek.editor.exceptions.ExitException;
 import com.kreitek.editor.memento.EditorCareTaker;
+import com.kreitek.editor.memento.EditorCareTakerInterface;
 
 public class CommandFactory {
     private static final CommandParser commandParser = new CommandParser();
-    private EditorCareTaker editorCareTaker = new EditorCareTaker();
+    private EditorCareTakerInterface editorCareTaker = new EditorCareTaker();
 
 
-    public Command getCommand(String commandLine, EditorCareTaker editorCareTaker) throws BadCommandException, ExitException {
+    public Command getCommand(String commandLine, EditorCareTakerInterface editorCareTaker) throws BadCommandException, ExitException {
         String[] args = commandParser.parse(commandLine);
         this.editorCareTaker = editorCareTaker;
         return switch (args[0]) {

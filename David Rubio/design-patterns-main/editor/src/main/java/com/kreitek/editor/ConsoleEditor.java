@@ -6,7 +6,9 @@ import com.kreitek.editor.exceptions.BadCommandException;
 import com.kreitek.editor.exceptions.ExitException;
 import com.kreitek.editor.exceptions.NullEditMementoException;
 import com.kreitek.editor.memento.EditorCareTaker;
+import com.kreitek.editor.memento.EditorCareTakerInterface;
 import com.kreitek.editor.memento.EditorMemento;
+import com.kreitek.editor.memento.EditorMementoInterface;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -24,8 +26,8 @@ public class ConsoleEditor implements Editor {
 
     private final CommandFactory commandFactory = new CommandFactory();
     private ArrayList<String> documentLines = new ArrayList<String>();
-    private EditorCareTaker editorCareTaker = new EditorCareTaker();
-    private EditorMemento editorMemento;
+    private EditorCareTakerInterface editorCareTaker = new EditorCareTaker();
+    private EditorMementoInterface editorMemento;
 
 
     @Override
