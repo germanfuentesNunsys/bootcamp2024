@@ -8,11 +8,11 @@ import com.kreitek.pets.infraestructure.logging.Logger;
 import java.util.List;
 
 public class CatController implements Controller {
-    private static final Logger logger = new Logger(); // Declaración del Logger
+    private static final Logger logger = Logger.getInstance();
 
     @Override
     public String executePut(String petName, String ownerName, String telephone) {
-        logger.debug("CatController.executePut " + petName + "," + ownerName + "," + telephone); // Registro de debug
+        logger.debug("CatController.executePut " + petName + "," + ownerName + "," + telephone);
         Cat cat = new Cat(petName, ownerName, telephone);
         DbService dbService = DbService.getInstance();
         dbService.addNewCat(cat);
@@ -21,10 +21,10 @@ public class CatController implements Controller {
 
     @Override
     public String executeGet() {
-        logger.debug("CatController.executeGet CATS"); // Registro de debug
+        logger.debug("CatController.executeGet CATS");
         DbService dbService = DbService.getInstance();
         List<Cat> cats = dbService.getCats();
-        StringBuilder response = new StringBuilder(); // Usamos StringBuilder para mejorar el rendimiento
+        StringBuilder response = new StringBuilder();
         for (Cat cat : cats) {
             response.append(cat.toString()).append("\r\n");
         }
