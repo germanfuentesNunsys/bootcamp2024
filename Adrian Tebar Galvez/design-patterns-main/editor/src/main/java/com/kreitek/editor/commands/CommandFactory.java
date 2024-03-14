@@ -2,8 +2,11 @@ package com.kreitek.editor.commands;
 
 import com.kreitek.editor.*;
 
+import com.kreitek.editor.Memento.CaretakerEdit;
+
 public class CommandFactory {
     private static final CommandParser commandParser = new CommandParser();
+   private static CaretakerEdit caretaker = new CaretakerEdit();
 
     public Command getCommand(String commandLine) throws BadCommandException, ExitException {
         String[] args = commandParser.parse(commandLine);
@@ -17,22 +20,21 @@ public class CommandFactory {
     }
 
     private Command createUndoCommand() {
-        // TODO create undo command
-        return null;
+        return new Undo(caretaker);
     }
 
     private Command createDeleteCommand(String lineNumber) {
         int number = Integer.parseInt(lineNumber);
-        return new DeleteCommand(number);
+        return new DeleteCommand(number, caretaker);
     }
 
     private Command createUpdateCommand(String lineNumber, String text) {
         int number = Integer.parseInt(lineNumber);
-        return new UpdateCommand(text, number);
+        return new UpdateCommand(text, number, caretaker);
     }
 
     private Command createAppendCommand(String text) {
-        return new AppendCommand(text);
+        return new AppendCommand(text, caretaker);
     }
 
 }
