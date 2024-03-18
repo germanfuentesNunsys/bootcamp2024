@@ -18,11 +18,11 @@ public class EditorCareTaker {
     }
 
     public void restore(ArrayList<String> documentLines) {
-       // if (!ListMementos.isEmpty()) {
-            //Memento memento = ListMementos.get(ListMementos.size() - 1);
-           // ArrayList<String> state = memento.getState();
+        if (!ListMementos.isEmpty()) {
+            Memento memento = ListMementos.get(ListMementos.size() - 1);
+            ArrayList<String> state = memento.getState();
             documentLines.clear();
-            documentLines.addAll(documentLines);
-       // }
+            documentLines.addAll(state);
+        }
     }
 }
