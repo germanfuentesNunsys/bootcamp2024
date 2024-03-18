@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DbService {
     private static volatile DbService instance = null;
-    private static final Logger logger = new Logger(); // Declaración del Logger
+    private static final Logger logger = Logger.getInstance();
 
     private List<Cat> cats = new ArrayList<>();
     private List<Dog> dogs = new ArrayList<>();
@@ -33,21 +33,21 @@ public class DbService {
 
     public void addNewDog(Dog dog) {
         dogs.add(dog);
-        logger.debug("DbService.Dog added"); // Registro de debug
+        logger.debug("DbService.Dog added");
     }
 
     public void addNewCat(Cat cat) {
         cats.add(cat);
-        logger.debug("DbService.Cat added"); // Registro de debug
+        logger.debug("DbService.Cat added");
     }
 
     public List<Cat> getCats() {
-        logger.debug("DbService.Get " + cats.size() + " cats"); // Registro de debug
+        logger.debug("DbService.Get " + cats.size() + " cats");
         return new ArrayList<>(cats);
     }
 
     public List<Dog> getDogs() {
-        logger.debug("DbService.Get " + dogs.size() + " dogs"); // Registro de debug
+        logger.debug("DbService.Get " + dogs.size() + " dogs");
         return new ArrayList<>(dogs);
     }
 }
