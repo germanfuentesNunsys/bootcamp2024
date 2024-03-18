@@ -1,11 +1,23 @@
 package com.kreitek.editor;
 
 import com.kreitek.editor.commands.CommandFactory;
+import com.kreitek.editor.commands.UndoCommand;
+import com.kreitek.editor.memento.CareTaker;
+import com.kreitek.editor.memento.Memento;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ConsoleEditor implements Editor {
+    private final CareTaker caretaker = new CareTaker();
+    private final CommandFactory commandFactory;
+
+    public ConsoleEditor(){
+        this.commandFactory = new CommandFactory(this);
+    }
+
     public static final String TEXT_RESET = "\u001B[0m";
     public static final String TEXT_BLACK = "\u001B[30m";
     public static final String TEXT_RED = "\u001B[31m";
@@ -15,8 +27,6 @@ public class ConsoleEditor implements Editor {
     public static final String TEXT_PURPLE = "\u001B[35m";
     public static final String TEXT_CYAN = "\u001B[36m";
     public static final String TEXT_WHITE = "\u001B[37m";
-
-    private final CommandFactory commandFactory = new CommandFactory();
     private ArrayList<String> documentLines = new ArrayList<String>();
 
     @Override
@@ -26,6 +36,9 @@ public class ConsoleEditor implements Editor {
             String commandLine = waitForNewCommand();
             try {
                 Command command = commandFactory.getCommand(commandLine);
+                if (!(command instanceof UndoCommand)) {
+                    caretaker.push(getState());
+                }
                 command.execute(documentLines);
             } catch (BadCommandException e) {
                 printErrorToConsole("Bad command");
@@ -64,6 +77,7 @@ public class ConsoleEditor implements Editor {
         printLnToConsole("To add new line -> a \"your text\"");
         printLnToConsole("To update line  -> u [line number] \"your text\"");
         printLnToConsole("To delete line  -> d [line number]");
+        printLnToConsole("To undo the last action -> undo");
     }
 
     private void printErrorToConsole(String message) {
@@ -83,5 +97,31 @@ public class ConsoleEditor implements Editor {
     private void printToConsole(String message) {
         System.out.print(message);
     }
+
+    public Memento getState(){
+        ArrayList<String> state = new ArrayList<>(documentLines);
+        return new Memento(state);
+    }
+
+    public void setState(Memento memento){
+        documentLines = new ArrayList<>(memento.getState());
+    }
+
+    public void executeCommand(Command command) {
+        command.execute(documentLines);
+        if (!(command instanceof UndoCommand)) {
+            caretaker.push(getState());
+        }
+    }
+
+    public Memento getLatestSavedState() {
+        return caretaker.getByIndex(caretaker.size() - 1);
+    }
+
+    public int getSavedStatesSize() {
+        return caretaker.size();
+    }
+
+
 
 }
