@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class PetApp {
 
-    private static final Logger logger = new Logger();
+    private static final Logger logger = Logger.getInstance();
 
     public static void main(String[] args) {
         ControllerFactory controllerFactory = new ControllerFactory();
