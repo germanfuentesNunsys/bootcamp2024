@@ -1,0 +1,31 @@
+.tags {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tag i {
+    color: #ffffff;
+}
+
+.front {
+    background-color: #61bd4f;
+}
+
+.back {
+    background-color: #f26900;
+}
+
+.device {
+    background-color: #fff01a;
+}
