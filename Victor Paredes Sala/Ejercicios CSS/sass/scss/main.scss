@@ -1,0 +1,28 @@
+@import 'column';
+@import 'cards';
+@import 'tags';
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://assets.cntraveller.in/photos/60be1b305aa1165816c13930/master/w_1600%2Cc_limit/59290347_bb21566a28_o-866x650.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+}
+
+h1{
+    color: white;
+    background-color: rgba(0, 119, 255, 0.7);
+    border-radius: 10px;
+    font-size: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
