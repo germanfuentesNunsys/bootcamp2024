@@ -1,0 +1,32 @@
+body {
+    padding: 50px;
+    background: linear-gradient(to right, hotpink, mediumpurple);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: auto;
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Arial, Arial, serif;
+}
+
+time {
+    font-family: Arial, serif;
+    font-size: 10px;
+}
