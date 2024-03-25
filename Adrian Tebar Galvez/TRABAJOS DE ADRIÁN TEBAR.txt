@@ -1,0 +1,5 @@
+Ejercicio práctico de Patrones de Diseño - Implementar Logger
+
+Ejercicio práctico de Patrones de Diseño - Implementar función Undo
+
+Práctica CSS - Colección de noticias

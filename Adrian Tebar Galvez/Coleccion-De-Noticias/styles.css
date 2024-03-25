@@ -1,0 +1,76 @@
+
+.body{
+    width: 99%;
+    height: 99%;
+    background: linear-gradient(90deg, rgba(230,174,200,1) 32%, rgba(107,84,165,1) 100%, rgba(107,84,165,1) 100%);
+}
+.article{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: 200px;
+    float: left;
+}
+.article2{
+    width: 300px;
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: 100px;
+    float: left; 
+   
+}
+.article3{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: 100px;
+    float: left; 
+   
+    
+}
+.article4{
+    width: 300px;
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: 100px;
+    float: left; 
+}
+.lazypreload{
+    width: 250px;
+    height: 180px;
+    margin-left: 25px;
+    border-radius: 5px;
+
+}
+.lazypreload2{
+    width: 250px;
+    height: 300px;
+    margin-left: 25px;
+    border-radius: 5px;
+
+}
+.text{
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+.text2{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 1);
+    
+}
+
+
