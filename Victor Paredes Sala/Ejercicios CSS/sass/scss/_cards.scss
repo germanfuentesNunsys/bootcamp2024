@@ -1,0 +1,12 @@
+.card{
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
