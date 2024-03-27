@@ -1,0 +1,81 @@
+@import 'variables';
+
+body {
+  background-image: url('https://i.blogs.es/89aaa3/650_1000_bliss-original/450_1000.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#kanban {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid $color-primary;
+  background-color: $color-primary;
+  font-size: 24px;
+  color: white;
+}
+
+.column {
+  width: 300px;
+  height: fit-content;
+  background-color: $color-background;
+  margin: 20px 9px 0px 9px;
+  border-radius: 10px;
+  float: left;
+}
+
+
+.card {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  line-height: 40px;
+  height: fit-content;
+  padding-bottom: 60px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 30px;
+
+  &:hover {
+    background-color: $color-primary;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.tag {
+  display: inline-flex;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: lightgray;
+}
+
+.front {
+  background-color: green;
+}
+
+.back {
+  background-color: red;
+}
+
+.device {
+  background-color: yellow;
+}
