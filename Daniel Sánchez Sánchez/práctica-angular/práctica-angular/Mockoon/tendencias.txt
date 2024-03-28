@@ -1,0 +1,11 @@
+[
+    {
+      "url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5b0981ff-45f8-40c3-9372-32430a62aaea/dunk-high-zapatillas-npDlgV.png"
+    },
+    {
+      "url": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/60254be1-2776-4426-a8db-3f1df6ad0f6c/calzado-tanjun-jQ3z1W.png"
+    },
+    {
+      "url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-B9kfmF.png"
+    }
+]
