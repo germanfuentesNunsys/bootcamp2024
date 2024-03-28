@@ -1,0 +1,35 @@
+.tag{
+    margin-left: 15px;
+    float: left;
+    
+  }
+  .front, .back, .device{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: #6DC662;
+    margin: 0%;
+    align-content: center;
+  }
+  .fas {
+    margin-left: 4px;
+    color: white;
+  }
+  .fa-cube{
+    margin-left: 6px;
+  }
+  .fa-mobile-alt{
+    margin-left: 8px;
+  }
+  .fa-solid{
+    color: rgb(205, 32, 32);
+    margin-left: 275px;
+    margin-top: 8px;
+  }
+ .back, .device{
+    margin-left: 5px;
+    background-color: #DE6D4B;
+ }
+ .device{
+    background-color: #F6CD6F;  
+ }

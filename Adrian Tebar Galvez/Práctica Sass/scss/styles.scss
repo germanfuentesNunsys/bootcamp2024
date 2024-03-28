@@ -1,0 +1,33 @@
+@import "cards";
+
+@import 'column';
+
+@import 'tags';
+
+.body{
+  background-image: url('../img/mountains-1752433_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Lato', sans-serif; 
+}
+
+h1 {
+  width: 250px;
+  height: 35px;
+  margin-top: 70px; 
+  border-radius:5px;
+  margin-left: 800px;
+  text-align: center;
+  background-color: rgba(61, 167, 209, 0.547);
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+h2{
+  margin-left: 15px;
+}
+
+h3, p, .tags{
+  margin-left: 20px;
+}

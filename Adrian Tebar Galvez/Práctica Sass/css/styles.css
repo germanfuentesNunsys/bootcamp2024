@@ -1,0 +1,101 @@
+
+.body{
+    background-image: url('../img/mountains-1752433_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif; 
+}
+
+h1 {
+    width: 250px;
+    height: 35px;
+    margin-top: 70px; 
+    border-radius:5px;
+    margin-left: 800px;
+    text-align: center;
+    background-color: rgba(61, 167, 209, 0.547);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h2{
+    margin-left: 15px;
+}
+
+h3, p, .tags{
+    margin-left: 20px;
+}
+
+.column{
+    width: 320px;
+    background-color: rgba(240, 248, 255, 0.896);
+    float: left;
+    margin-left: 30px;
+
+  }
+  
+  .card{
+    width: 300px;
+    height: 170px;
+    background-color: rgb(240, 248, 255);
+    margin-left: 10px;
+    border-radius: 10px;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .card:hover {
+    background-color: rgba(1, 149, 255, 0.73); 
+}
+  .card:hover .fa-solid {
+   color: black;
+   background-color: white;
+   border-radius: 50px;
+   
+}
+.card:hover .fas{
+    color: #277C77;
+}
+.card:hover h3{
+    color: white;
+}
+.card:hover p{
+    color: white;
+}
+  .tag{
+    margin-left: 15px;
+    float: left;
+    
+  }
+  .front, .back, .device{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: #6DC662;
+    margin: 0%;
+    align-content: center;
+  }
+  .fas {
+    margin-left: 4px;
+    color: white;
+  }
+  .fa-cube{
+    margin-left: 6px;
+  }
+  .fa-mobile-alt{
+    margin-left: 8px;
+  }
+  .fa-solid{
+    color: rgb(205, 32, 32);
+    margin-left: 275px;
+    margin-top: 8px;
+  }
+ .back, .device{
+    margin-left: 5px;
+    background-color: #DE6D4B;
+ }
+ .device{
+    background-color: #F6CD6F;  
+ }
+ /*# sourceMappingURL=styles.css.map */
